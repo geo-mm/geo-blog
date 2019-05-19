@@ -4241,7 +4241,7 @@ var Gitment = function () {
       var search = _utils.Query.stringify(query);
       var replacedUrl = '' + window.location.origin + window.location.pathname + search + window.location.hash;
       history.replaceState({}, '', replacedUrl);
-      var oauth_host = !!oauth_service ? oauth_server : 'https://github.com/login/oauth/access_token';
+      var oauth_host = !!oauth_service ? oauth_service : 'https://github.com/login/oauth/access_token';
 
       Object.assign(this, {
         id: replacedUrl,
